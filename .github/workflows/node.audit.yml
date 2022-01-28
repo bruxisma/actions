@@ -22,5 +22,5 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
       - name: Audit Dependencies
-        uses: npm audit --audit-level=${{inputs.audit-level}}
+        run: npm audit --audit-level=${{inputs.audit-level}}
 
