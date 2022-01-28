@@ -1,0 +1,29 @@
+name: Lint YAML
+on:
+  workflow_call:
+    inputs:
+      yamllint-flags:
+        description: Flags and arguments for yamllint
+        required: false
+        type: string
+      fail-on-error:
+        description: Should reviewdog fail when errors are found
+        required: false
+        type: boolean
+      workdir:
+        description: Directory to search for files to lint
+        required: true
+        default: ${{github.workspace}}
+        type: string
+jobs:
+  yamllint:
+    name: Review Dog - Lint YAML Files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Review Dog - yamllint
+        uses: reviewdog/action-yamllint@v1
+        with:
+          yamllint_flags: ${{inputs.yamllint-flags}} ${{inputs.workdir}}
+          fail_on_error: ${{inputs.fail-on-error}}

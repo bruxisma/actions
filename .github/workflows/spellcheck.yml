@@ -1,0 +1,9 @@
+name: Spellcheck
+on: [workflow_call]
+jobs:
+  spellcheck:
+    name: Spellcheck
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Spelling
+        uses: crate-ci/typos@v1
