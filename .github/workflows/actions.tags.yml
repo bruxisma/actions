@@ -1,0 +1,8 @@
+name: Update Action Tags
+on: [workflow_call]
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update Action Tags
+        uses: Actions-R-Us/actions-tagger@latest

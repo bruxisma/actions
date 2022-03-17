@@ -1,0 +1,13 @@
+name: Audit Rust Crates
+on: [workflow_call]
+jobs:
+  rust.audit:
+    name: Audit Rust Crates
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Audit Check
+        uses: actions-rs/audit-check@v1
+        with:
+          token: ${{github.token}}

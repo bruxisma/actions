@@ -31,7 +31,7 @@ jobs:
         run: |
           echo "::set-output name=flag::"
           if [[ "${{inputs.config}}" != "" ]];
-            echo "::set-output name=flag::${{inputs.config}}"
+            echo "::set-output name=flag::--config ${{inputs.config}}"
           fi
       - name: Review Dog - golangci-lint
         uses: reviewdog/action-golangci-lint@v2
