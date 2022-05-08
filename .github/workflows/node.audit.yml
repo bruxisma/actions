@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@7884fcad6b5d53d10323aee724dc68d8b9096a2e # tag=v2
       - name: Setup Node
         uses: actions/setup-node@56337c425554a6be30cdef71bf441f15be286854 # tag=v3
       - name: Audit Dependencies
