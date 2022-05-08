@@ -27,4 +27,10 @@ jobs:
       audit-level: severe
 ```
 
+# Note
+
+Testing is very difficult so these actions will almost never change once
+written. These are intended to be used for *my* projects. If you choose to
+depend on them, I cannot promise stuff won't change or break.
+
 [1]: https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow
