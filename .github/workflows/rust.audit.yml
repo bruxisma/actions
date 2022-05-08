@@ -8,6 +8,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Audit Check
-        uses: actions-rs/audit-check@v1
+        uses: actions-rs/audit-check@35b7b53b1e25b55642157ac01b4adceb5b9ebef3 # tag=v1
         with:
           token: ${{github.token}}
