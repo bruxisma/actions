@@ -34,7 +34,7 @@ jobs:
             echo "::set-output name=flag::--config ${{inputs.config}}"
           fi
       - name: Review Dog - golangci-lint
-        uses: reviewdog/action-golangci-lint@v2
+        uses: reviewdog/action-golangci-lint@f3dc5fadcaff5d8da3574b129a58db433171b1a8 # tag=v2
         with:
           golangci_lint_flags: ${{inputs.golangci-lint-flags}} ${{steps.configuration.outputs.path}}
           fail_on_error: ${{inputs.fail-on-error}}

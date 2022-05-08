@@ -23,7 +23,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Review Dog - yamllint
-        uses: reviewdog/action-yamllint@v1
+        uses: reviewdog/action-yamllint@c5a0c559f09938e902466526c71441f1de2e603b # tag=v1
         with:
           yamllint_flags: ${{inputs.yamllint-flags}} ${{inputs.workdir}}
           fail_on_error: ${{inputs.fail-on-error}}
