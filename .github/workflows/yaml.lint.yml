@@ -12,7 +12,7 @@ on:
         type: boolean
       workdir:
         description: Directory to search for files to lint
-        required: true
+        required: false
         default: ${{github.workspace}}
         type: string
 jobs:
