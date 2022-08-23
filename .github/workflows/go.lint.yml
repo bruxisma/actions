@@ -20,7 +20,7 @@ on:
         required: false
         type: string
 jobs:
-  go.lint:
+  go:
     name: Review Dog - Lint Go
     runs-on: ubuntu-latest
     steps:

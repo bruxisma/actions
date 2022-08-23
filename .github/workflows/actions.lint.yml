@@ -6,7 +6,7 @@ on:
     branches: [main]
   workflow_call:
 jobs:
-  lint:
+  actions:
     name: Review Dog - Lint GitHub Action Workflows
     runs-on: ubuntu-latest
     steps:

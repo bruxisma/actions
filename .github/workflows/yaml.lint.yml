@@ -16,7 +16,7 @@ on:
         default: ${{github.workspace}}
         type: string
 jobs:
-  yamllint:
+  yaml:
     name: Review Dog - Lint YAML Files
     runs-on: ubuntu-latest
     steps:
