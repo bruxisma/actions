@@ -30,7 +30,7 @@ jobs:
         id: configuration
         run: |
           echo "::set-output name=flag::"
-          if [[ "${{inputs.config}}" != "" ]];
+          if [[ "${{inputs.config}}" != "" ]]; then
             echo "::set-output name=flag::--config ${{inputs.config}}"
           fi
       - name: Review Dog - golangci-lint
