@@ -23,7 +23,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3
       - name: Review Dog - ESLint
-        uses: reviewdog/action-eslint@0d9c815b089d06d77f6a6aad28e9d3bcd83896e5 # v1
+        uses: reviewdog/action-eslint@94d539484aab48e9b2ffff6466d8866ee4e4b217 # v1
         with:
           eslint_flags: ${{inputs.eslint-flags}} ${{inputs.path}}
           fail_on_error: ${{inputs.fail-on-error}}
